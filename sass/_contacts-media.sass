@@ -1,0 +1,75 @@
+@media (max-width: 1200px)
+	.header
+		&__title
+			p
+				width: 640px
+				line-height: 26px
+	.contacts
+		margin-left: 8.2%
+		&__element
+			&_header
+				font-size: 17px
+			&_info
+				font-size: 17px
+@media (max-width: 800px)
+	.header
+		&__title
+			p
+				width: 85%
+				line-height: 22px
+	.contacts
+		padding-bottom: 130px
+		width: 84%
+		margin-left: 8.6%
+		&__element
+			margin-bottom: 25px
+			&_header
+				width: 180px
+		p
+			font-size: 16px
+		a
+			font-size: 16px
+	.footer
+		padding: 30px 7%
+@media (max-width: 600px)
+	.header
+		&__title
+			p
+				font-size: 16px
+				line-height: 21px
+	.contacts
+		margin-left: 6%
+		&__element
+			display: block
+			margin-bottom: 40px
+			&_header
+				margin-bottom: 3px
+				color: $active-color
+				width: 100%
+
+
+// Отображение иконок контактов
+// только на больших экранах
+@media (min-width: 600px)
+	@mixin contacts-icon
+		background-position: 0% 0%
+		background-size: contain
+		background-repeat: no-repeat
+		width: 20px
+		height: 20px
+		margin-right: 20px
+
+	.contacts__element_icon
+		&_email
+			@include contacts-icon
+			background-image: url(../img/contacts/email.svg)
+		&_tg
+			@include contacts-icon
+			background-image: url(../img/contacts/tg.svg)
+			transform: translateX(-1px)
+		&_vk
+			@include contacts-icon
+			background-image: url(../img/contacts/vk.svg)
+			transform: translateX(-1px)
+			background-position: center center
+			width: 23px

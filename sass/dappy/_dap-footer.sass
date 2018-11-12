@@ -1,0 +1,60 @@
+.dap-footer
+	width: 85%
+	display: flex
+	justify-content: space-between
+	margin: 0 auto
+	font-size: 16px
+	color: $text-color-light
+	padding: 140px 0
+	&-title
+		font-weight: 700
+		color: $text-color-dark
+		margin-bottom: 20px
+	&__about,
+	&__contact
+		display: flex
+		flex-direction: column
+		a
+			font-size: 16px
+			color: $text-color-light
+			transition: 250ms
+			&:hover
+				opacity: .8
+	&__about
+		li
+			margin-bottom: 10px
+	&__contact
+		&_email
+			margin-bottom: 31px
+	&__social
+		@include social
+		li
+			transition: 250ms
+			&:hover
+				opacity: .8
+	&__newsletter
+		&_subtitle
+			margin-bottom: 22px
+		&_form
+			font-size: 0
+			input,
+			button
+				font-size: 14px
+				outline: none
+				box-sizing: border-box
+			input
+				padding: 11px 14px
+				border: 1px solid #82899B
+				color: $text-color-light
+				border-radius: 6px 0 0 6px
+			button
+				padding: 11px 18px
+				background: #315EFB
+				border: 1px solid #315EFB
+				color: #fff
+				border-radius: 0 6px 6px 0
+				letter-spacing: 0.5px
+				cursor: pointer
+				transition: 250ms
+				&:hover
+					background-color: rgba(#315EFB, .85)

@@ -1,0 +1,71 @@
+body
+	font-family: 'Montserrat', sans-serif
+	box-sizing: border-box
+
+$text-color-dark: #1F2431
+$text-color-light: #82899B
+
+@mixin info-title
+	font-weight: 700
+	font-size: 24px
+	color: $text-color-dark
+
+@mixin info-text
+	width: 415px
+	color: $text-color-light
+	font-weight: 300
+	line-height: 29px
+	font-size: 16px
+
+@mixin info-map-date
+	margin-bottom: 3px
+	font-weight: 300
+	line-height: 18px
+	font-size: 10px
+	color: #1F2431
+
+@mixin social
+	display: flex
+	&_twitter,
+	&_ph,
+	&_github,
+	&_reddit,
+	&_bitcointalk,
+	&_blockstack
+		margin: 0 4px
+		width: 24px
+		height: 24px
+		background-size: cover
+		background-repeat: no-repeat
+	&_twitter
+		background-image: url(../img/dappy/menu-social-twitter.svg)
+	&_ph
+		background-image: url(../img/dappy/menu-social-ph.svg)
+	&_github
+		background-image: url(../img/dappy/menu-social-github.svg)
+	&_reddit
+		background-image: url(../img/dappy/menu-social-reddit.svg)
+	&_bitcointalk
+		background-image: url(../img/dappy/menu-social-bitcointalk.svg)
+	&_blockstack
+		background-image: url(../img/dappy/menu-social-blockstack.svg)
+
+@mixin social-responsible
+	margin: 0 auto
+	justify-content: center
+	flex-wrap: wrap
+	&_twitter,
+	&_ph,
+	&_github,
+	&_reddit,
+	&_bitcointalk,
+	&_blockstack
+		width: 35px
+		height: 35px
+		margin: 0 10px
+
+@import 'dap-menu'
+@import 'dap-header'
+@import 'dap-info'
+@import 'dap-footer'
+@import 'dap-media'

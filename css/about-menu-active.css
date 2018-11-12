@@ -1,0 +1,7 @@
+.menu__right_about-us a{
+	color: #E22A2A;
+}
+
+.menu__right_about-us a:before{
+	width: 100%;
+}
