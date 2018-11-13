@@ -163,16 +163,16 @@ ul {
   width: 120%;
 }
 
-.portfolio__block_unabled_wrapper {
+.portfolio__block_unabled .portfolio__block_wrapper {
   position: relative;
 }
 
-.portfolio__block_unabled_wrapper:hover {
+.portfolio__block_unabled .portfolio__block_wrapper:hover {
   -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
 }
 
-.portfolio__block_unabled_wrapper:after {
+.portfolio__block_unabled .portfolio__block_wrapper:after {
   content: '';
   position: absolute;
   top: 0;
