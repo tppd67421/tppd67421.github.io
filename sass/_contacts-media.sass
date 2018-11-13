@@ -51,14 +51,6 @@
 // Отображение иконок контактов
 // только на больших экранах
 @media (min-width: 600px)
-	@mixin contacts-icon
-		background-position: 0% 0%
-		background-size: contain
-		background-repeat: no-repeat
-		width: 20px
-		height: 20px
-		margin-right: 20px
-
 	.contacts__element_icon
 		&_email
 			@include contacts-icon
@@ -73,3 +65,4 @@
 			transform: translateX(-1px)
 			background-position: center center
 			width: 23px
+			margin-right: 17px
