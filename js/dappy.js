@@ -1,16 +1,24 @@
-$(document).ready(function(){
+window.onload = function() {
 
   let msnry = new Masonry( '.dap-info', {
     itemSelector: '.dap-info-item'
   });
 
-  var gamburger = $('.dap-menu__gamburger');
-  var gamburger_active = $('.dap-menu__gamburger_active');
-  var menu = $('.dap-menu__all');
+  const gamburger = document.querySelector('.dap-menu__gamburger');
+  const menu = document.querySelector('.dap-menu__all');
+  const body = document.querySelector('body');
+  let gamburgerCounter = 0;
 
-  gamburger.click(function(){
-  	gamburger.toggleClass('dap-menu__gamburger_active');
-  	menu.toggleClass('dap-menu__all_active');
+  gamburger.addEventListener('click', function() {
+    gamburger.classList.toggle('dap-menu__gamburger_active');
+    menu.classList.toggle('dap-menu__all_active');
+    if(gamburgerCounter == 0) {
+      body.style.overflowY = 'hidden';
+      gamburgerCounter = 1;
+    } else if(gamburgerCounter == 1) {
+      body.style.overflowY = 'auto';
+      gamburgerCounter = 0;
+    }
   });
 
-});
+};

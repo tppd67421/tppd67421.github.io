@@ -1730,6 +1730,30 @@ h3 {
   }
 }
 
+@media (max-height: 360px) {
+  .dap-menu__all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .dap-menu__list {
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 30vh;
+  }
+
+  .dap-menu__list li {
+    margin: 0;
+  }
+
+  .dap-menu__social li {
+    margin-bottom: 10px;
+  }
+}
+
 .unn-gamburger {
   font-family: 'Quicksand', sans-serif;
   position: fixed;
