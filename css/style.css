@@ -2245,6 +2245,7 @@ h3 {
 .unn-header__subtitle {
   padding-top: 92px;
   margin-bottom: 16px;
+  margin-top: 0;
 }
 
 .unn-header__title {
@@ -2426,7 +2427,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100%;
+  background-size: 100% auto;
   width: 116px;
   height: 29px;
   cursor: pointer;
