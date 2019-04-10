@@ -1,0 +1,1049 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+body,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button,
+input {
+  outline: none;
+  border: 0;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 85%;
+  margin: 40px auto;
+}
+
+.menu__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.menu__logo div {
+  background-image: url("../img/dappy/menu-logo.svg");
+  display: inline-block;
+  width: 120px;
+  height: 24px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 35px;
+  width: 278px;
+}
+
+.menu__list a {
+  color: #1F2431;
+  font-size: 16px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.menu__list a:hover {
+  opacity: .8;
+}
+
+.menu__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__social_twitter,
+.menu__social_ph,
+.menu__social_github,
+.menu__social_reddit,
+.menu__social_bitcointalk,
+.menu__social_blockstack {
+  margin: 0 4px;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu__social_twitter {
+  background-image: url("../img/dappy/menu-social-twitter.svg");
+}
+
+.menu__social_ph {
+  background-image: url("../img/dappy/menu-social-ph.svg");
+}
+
+.menu__social_github {
+  background-image: url("../img/dappy/menu-social-github.svg");
+}
+
+.menu__social_reddit {
+  background-image: url("../img/dappy/menu-social-reddit.svg");
+}
+
+.menu__social_bitcointalk {
+  background-image: url("../img/dappy/menu-social-bitcointalk.svg");
+}
+
+.menu__social_blockstack {
+  background-image: url("../img/dappy/menu-social-blockstack.svg");
+}
+
+.menu__social li {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.menu__social li:hover {
+  opacity: .8;
+}
+
+.menu__gamburger {
+  display: none;
+  -webkit-transform: translateX(-5px);
+  transform: translateX(-5px);
+  cursor: pointer;
+  height: 20px;
+  width: 30px;
+}
+
+.menu__gamburger span:after,
+.menu__gamburger span:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  border-bottom: 4px solid #1F2431;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.menu__gamburger span:after {
+  top: 0;
+}
+
+.menu__gamburger span:before {
+  top: 16px;
+}
+
+.menu__gamburger_active span:after {
+  top: 8px;
+  -webkit-transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
+}
+
+.menu__gamburger_active span:before {
+  top: 8px;
+  -webkit-transform: translateY(0) rotate(-45deg);
+  transform: translateY(0) rotate(-45deg);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 79px;
+  padding-bottom: 92px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__title {
+  color: #1F2431;
+  width: 384px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  margin-bottom: 22px;
+}
+
+.header__subtitle {
+  color: #82899B;
+  width: 251px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+.header__button {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #315EF3;
+  padding: 13px 40px;
+  border-radius: 50px;
+  font-weight: 500;
+  line-height: 17px;
+  font-size: 12px;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.header__button:hover {
+  background-color: rgba(49, 94, 243, 0.85);
+}
+
+.header__img_right {
+  background-image: url("../img/dappy/header-img.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 593px;
+  height: 402px;
+}
+
+.info {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.info-item {
+  background-color: #F6FAFF;
+  border-radius: 6px;
+  margin: 5px 5px;
+  width: 565px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.info__multi,
+.info__source,
+.info__tokens,
+.info__roadmap,
+.info__exchange {
+  padding: 0 40px;
+}
+
+.info__multi_title,
+.info__source_title,
+.info__tokens_title,
+.info__roadmap_title,
+.info__exchange_title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #1F2431;
+  margin-bottom: 69px;
+}
+
+.info__multi_img div,
+.info__source_img div,
+.info__tokens_img div,
+.info__roadmap_img div,
+.info__exchange_img div {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-bottom: 84px;
+}
+
+.info__multi_text,
+.info__source_text,
+.info__tokens_text,
+.info__roadmap_text,
+.info__exchange_text {
+  width: 415px;
+  color: #82899B;
+  font-weight: 300;
+  line-height: 29px;
+  font-size: 16px;
+}
+
+.info__wallet {
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.info__wallet_text {
+  width: 415px;
+  color: #82899B;
+  font-weight: 300;
+  line-height: 29px;
+  font-size: 16px;
+  width: 485px;
+}
+
+.info__multi {
+  height: 505px;
+}
+
+.info__multi_img div {
+  background-size: cover;
+  background-image: url("../img/dappy/info/info-multi-currencies.svg");
+  width: 366px;
+  height: 198px;
+}
+
+.info__source {
+  height: 440px;
+}
+
+.info__source_title {
+  margin-bottom: 72px;
+}
+
+.info__source_img div {
+  background-size: cover;
+  background-image: url("../img/dappy/info/info-source.svg");
+  width: 369px;
+  height: 162px;
+  margin-bottom: 54px;
+}
+
+.info__source_text {
+  width: 390px;
+}
+
+.info__source_text span {
+  font-weight: 700;
+}
+
+.info__tokens {
+  height: 440px;
+}
+
+.info__tokens_img div {
+  background-size: cover;
+  background-image: url("../img/dappy/info/info-tokens.svg");
+  width: 402px;
+  height: 145px;
+  margin-bottom: 74px;
+}
+
+.info__roadmap {
+  height: 725px;
+}
+
+.info__roadmap_title {
+  margin-bottom: 43px;
+}
+
+.info__roadmap .info__map_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 312px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.info__roadmap .info__map_img_green {
+  background-image: url("../img/dappy/info/info-ellipse-green.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.info__roadmap .info__map_img_blue {
+  background-image: url("../img/dappy/info/info-ellipse-blue.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.info__roadmap .info__map_img_grey {
+  background-image: url("../img/dappy/info/info-grey.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.info__roadmap .info__map_img_line {
+  width: 114px;
+  border-top: 2px solid #EEEEFF;
+}
+
+.info__roadmap .info__map_img_ellipsis {
+  background-image: url("../img/dappy/info/info-ellipsis.svg");
+  width: 22px;
+  height: 6px;
+}
+
+.info__roadmap .info__map_img_special {
+  margin-bottom: 28px;
+}
+
+.info__roadmap .info__map_date_left,
+.info__roadmap .info__map_date_right {
+  margin-bottom: 3px;
+  font-weight: 300;
+  line-height: 18px;
+  font-size: 10px;
+  color: #1F2431;
+}
+
+.info__roadmap .info__map_date_right {
+  margin-left: 292px;
+}
+
+.info__roadmap .info__map_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.info__roadmap .info__map_text div {
+  width: 125px;
+  margin-right: 21px;
+  font-weight: 300;
+  line-height: 18px;
+  font-size: 12px;
+  color: #82899B;
+}
+
+.info__exchange {
+  height: 440px;
+}
+
+.info__exchange_title {
+  margin-bottom: 20px;
+}
+
+.info__exchange_img div {
+  background-image: url("../img/dappy/info/info-exchange.svg");
+  background-size: cover;
+  width: 381px;
+  height: 195px;
+}
+
+h3 {
+  margin-top: 24px;
+}
+
+.footer {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #82899B;
+  padding: 140px 0;
+}
+
+.footer-title {
+  font-weight: 700;
+  color: #1F2431;
+  margin-bottom: 20px;
+}
+
+.footer__about,
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer__about a,
+.footer__contact a {
+  font-size: 16px;
+  color: #82899B;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.footer__about a:hover,
+.footer__contact a:hover {
+  opacity: .8;
+}
+
+.footer__about li {
+  margin-bottom: 10px;
+}
+
+.footer__contact_email {
+  margin-bottom: 31px;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social_twitter,
+.footer__social_ph,
+.footer__social_github,
+.footer__social_reddit,
+.footer__social_bitcointalk,
+.footer__social_blockstack {
+  margin: 0 4px;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__social_twitter {
+  background-image: url("../img/dappy/menu-social-twitter.svg");
+}
+
+.footer__social_ph {
+  background-image: url("../img/dappy/menu-social-ph.svg");
+}
+
+.footer__social_github {
+  background-image: url("../img/dappy/menu-social-github.svg");
+}
+
+.footer__social_reddit {
+  background-image: url("../img/dappy/menu-social-reddit.svg");
+}
+
+.footer__social_bitcointalk {
+  background-image: url("../img/dappy/menu-social-bitcointalk.svg");
+}
+
+.footer__social_blockstack {
+  background-image: url("../img/dappy/menu-social-blockstack.svg");
+}
+
+.footer__social li {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.footer__social li:hover {
+  opacity: .8;
+}
+
+.footer__newsletter_subtitle {
+  margin-bottom: 22px;
+}
+
+.footer__newsletter_form {
+  font-size: 0;
+}
+
+.footer__newsletter_form input,
+.footer__newsletter_form button {
+  font-size: 14px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.footer__newsletter_form input {
+  padding: 11px 14px;
+  border: 1px solid #82899B;
+  color: #82899B;
+  border-radius: 6px 0 0 6px;
+}
+
+.footer__newsletter_form button {
+  padding: 11px 18px;
+  background: #315EFB;
+  border: 1px solid #315EFB;
+  color: #fff;
+  border-radius: 0 6px 6px 0;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.footer__newsletter_form button:hover {
+  background-color: rgba(49, 94, 251, 0.85);
+}
+
+.brd {
+  font-family: 'Montserrat', sans-serif;
+  color: #2E2E2E;
+  padding: 40px 0;
+  margin-bottom: 5px;
+  text-align: center;
+  border-top: 1px solid #BBBBBB;
+}
+
+.brd__created {
+  color: #4D4D4D;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.brd__name {
+  font-weight: 700;
+  font-size: 25px;
+  color: #2E2E2E;
+}
+
+@media (max-width: 1350px) {
+  .menu {
+    width: 90%;
+  }
+
+  .header {
+    width: 85%;
+  }
+
+  .footer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    width: 93%;
+  }
+
+  .menu__list {
+    width: 250px;
+  }
+
+  .menu__list a {
+    font-size: 15px;
+  }
+
+  .menu__social {
+    width: 210px;
+  }
+
+  .header {
+    width: 95%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .header__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 18px;
+  }
+
+  .info {
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  .info-item {
+    width: 465px;
+  }
+
+  .info__wallet {
+    padding: 0 40px;
+  }
+
+  .info__multi_img div {
+    width: 320px;
+    height: 173px;
+  }
+
+  .info__multi_text {
+    width: auto;
+    margin-left: auto;
+  }
+
+  .info__source_img div {
+    width: 337px;
+    height: 148px;
+  }
+
+  .info__tokens_img div {
+    width: 354px;
+    height: 127px;
+  }
+
+  .info__tokens_text {
+    margin-left: auto;
+    width: auto;
+  }
+
+  .info__roadmap {
+    padding-right: 0;
+  }
+
+  .info__roadmap_title {
+    margin-bottom: 35px;
+  }
+
+  .info__roadmap .info__map_text :last-child {
+    margin-right: 0;
+    width: 100px;
+  }
+
+  .info__exchange_text {
+    margin-bottom: 20px;
+  }
+
+  .info__exchange_img div {
+    width: 345px;
+  }
+
+  .footer {
+    width: 93%;
+  }
+
+  .footer a {
+    font-size: 15px;
+  }
+
+  .footer__newsletter_subtitle {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 989px) {
+  .menu {
+    margin: 30px auto;
+  }
+
+  .menu__list {
+    width: 235px;
+  }
+
+  .header {
+    width: 90%;
+  }
+
+  .header__title {
+    width: auto;
+  }
+
+  .header__text_left {
+    display: block;
+    width: 100%;
+  }
+
+  .header__img_right {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    opacity: .1;
+  }
+
+  .info {
+    width: 80%;
+  }
+
+  .info-item {
+    height: auto;
+    width: 95%;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 30px 30px;
+  }
+
+  .info__multi_title,
+  .info__source_title,
+  .info__tokens_title,
+  .info__roadmap_title,
+  .info__exchange_title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .info__multi_text,
+  .info__source_text,
+  .info__tokens_text,
+  .info__roadmap_text,
+  .info__exchange_text {
+    margin-left: 0;
+  }
+
+  .info__multi_img div {
+    width: 250px;
+    height: 135px;
+  }
+
+  .info__source_img div {
+    width: 250px;
+    height: 110px;
+  }
+
+  .info__tokens_img div {
+    width: 250px;
+    height: 90px;
+  }
+
+  .info__exchange_img div {
+    width: 250px;
+    height: 130px;
+  }
+
+  .info__roadmap .info__map {
+    width: 298px;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .info__roadmap .info__map_img {
+    width: 220px;
+  }
+
+  .info__roadmap .info__map_img_line {
+    width: 60px;
+  }
+
+  .info__roadmap .info__map_text div {
+    width: 84px;
+    margin-right: 15px;
+  }
+
+  .info__roadmap .info__map_date_right {
+    margin-left: 200px;
+  }
+
+  .info__source_text,
+  .info__exchange_text {
+    width: auto;
+  }
+
+  .footer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 100px 0;
+  }
+
+  .footer__about,
+  .footer__contact,
+  .footer__newsletter {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .footer__about,
+  .footer__contact {
+    margin-bottom: 30px;
+  }
+
+  .footer__contact a {
+    margin-bottom: 15px;
+  }
+
+  .footer__social {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer__social_twitter,
+  .footer__social_ph,
+  .footer__social_github,
+  .footer__social_reddit,
+  .footer__social_bitcointalk,
+  .footer__social_blockstack {
+    width: 35px;
+    height: 35px;
+    margin: 5px 10px;
+  }
+
+  .footer__newsletter_subtitle {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .footer__newsletter_form form {
+    width: 230px;
+    margin: 0 auto;
+  }
+
+  .footer__newsletter_form input,
+  .footer__newsletter_form button {
+    border-radius: 6px;
+  }
+
+  .footer__newsletter_form input {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 724px) {
+  .menu__all {
+    margin: 0 auto;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F3FAFF;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    top: 40px;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 0;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+    pointer-events: none;
+  }
+
+  .menu__all_active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu__list {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .menu__list li {
+    margin-bottom: 30px;
+  }
+
+  .menu__list li a {
+    font-size: 20px;
+  }
+
+  .menu__social {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+
+  .menu__social_twitter,
+  .menu__social_ph,
+  .menu__social_github,
+  .menu__social_reddit,
+  .menu__social_bitcointalk,
+  .menu__social_blockstack {
+    width: 35px;
+    height: 35px;
+    margin: 5px 10px;
+  }
+
+  .menu__social li {
+    margin-bottom: 15px;
+  }
+
+  .menu__logo div,
+  .menu__gamburger {
+    position: fixed;
+    z-index: 3;
+    top: 20px;
+  }
+
+  .menu__bg {
+    width: 100vw;
+    left: 0;
+    top: 0;
+    height: 63px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    border-bottom: 2px solid #fff;
+    z-index: 1;
+  }
+
+  .menu__gamburger {
+    display: block;
+    right: 3%;
+  }
+
+  .info {
+    width: 100%;
+  }
+}
+
+@media (max-height: 360px) {
+  .menu__all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .menu__list {
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 30vh;
+  }
+
+  .menu__list li {
+    margin: 0;
+  }
+
+  .menu__social li {
+    margin-bottom: 10px;
+  }
+}

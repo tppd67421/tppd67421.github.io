@@ -1,7 +1,7 @@
 window.onload = function() {
 
-	const gamburger = document.querySelector('.unn-gamburger');
-	const gamburgerButton = document.querySelector('.unn-menu__gamburger');
+	const gamburger = document.querySelector('.gamburger');
+	const gamburgerButton = document.querySelector('.menu__gamburger');
 	const body = document.querySelector('body');
 	// счетчик для проверки overflowY
 	let gamburgerCount = 0;
@@ -22,10 +22,10 @@ window.onload = function() {
 	gamburgerButton.addEventListener('click', clickActiveGamburger);
 	
 	
-	const headerButton = document.querySelector('.unn-header__button');
-	const popupVideo = document.querySelector('.unn-header__popup');
-	const appMainButton = document.querySelector('.unn-app__main-button');
-	const video = document.querySelector('.unn-header__popup_video');
+	const headerButton = document.querySelector('.header__button');
+	const popupVideo = document.querySelector('.header__popup');
+	const appMainButton = document.querySelector('.app__main-button');
+	const video = document.querySelector('.header__popup_video');
 	// счетчик для проверки overflowY
 	let videoCount = 0;
 	
@@ -46,7 +46,7 @@ window.onload = function() {
 	function hideVideo(event) {
 		let target = event.target;
 		if(videoCount == 1) {
-			if(target.className == 'unn-header__popup') {
+			if(target.className == 'header__popup') {
 				popupVideo.style.display = 'none';
 				popupVideo.style.pointerEvents = 'none';
 				video.pause();
@@ -60,9 +60,9 @@ window.onload = function() {
 	document.addEventListener('click', hideVideo);
 	
 	
-	const headerCarouselParent = document.querySelector('.unn-header__carousel');
-	const headerCarouselChild = headerCarouselParent.querySelectorAll('.unn-header__carousel_item');
-	const headerBgImg = document.querySelectorAll('.unn-header__bg_item');
+	const headerCarouselParent = document.querySelector('.header__carousel');
+	const headerCarouselChild = headerCarouselParent.querySelectorAll('.header__carousel_item');
+	const headerBgImg = document.querySelectorAll('.header__bg_item');
 	let headerCarouselChildPress;
 	let headerCounterAutoFlipping = 1;
 	
@@ -73,7 +73,7 @@ window.onload = function() {
 	function headerSlider(event) {
 		let target = event.target;
 	
-		if (target.className != 'unn-header__carousel_item') {
+		if (target.className != 'header__carousel_item') {
 			return;
 		}
 	
@@ -107,8 +107,8 @@ window.onload = function() {
 	} , 4000);
 	
 	
-	const resourcesCarouselParent = document.querySelector('.unn-resources__carousel');
-	const resourcesCarouselChild = resourcesCarouselParent.querySelectorAll('.unn-resources__carousel_item');
+	const resourcesCarouselParent = document.querySelector('.resources__carousel');
+	const resourcesCarouselChild = resourcesCarouselParent.querySelectorAll('.resources__carousel_item');
 	let resourcesCarouselChildPress;
 	let resourcesCounterCarouselFlipping = 1;
 	let resourcesSliderCounter = 1;
@@ -119,7 +119,7 @@ window.onload = function() {
 	function resourcesSlider(event) {
 		let target = event.target;
 	
-		if (target.className != 'unn-resources__carousel_item'){
+		if (target.className != 'resources__carousel_item'){
 			return;
 		}
 	
@@ -142,8 +142,8 @@ window.onload = function() {
 	// копирование первого слайда и вставка его в конец
 	// копирование последнего слайда и вставка его в начало
 	// (для достижения плавного и бесконечного пролистывания)
-	var resourcesSliderParent = document.querySelector('.unn-resources__slider');
-	let resourcesSliderChild = resourcesSliderParent.querySelectorAll('.unn-resources__slider_item');
+	var resourcesSliderParent = document.querySelector('.resources__slider');
+	let resourcesSliderChild = resourcesSliderParent.querySelectorAll('.resources__slider_item');
 	let resourcesSliderChildFirstClone = resourcesSliderChild[0].cloneNode(true);
 	let resourcesSliderChildLastClone = resourcesSliderChild[resourcesSliderChild.length - 1].cloneNode(true);
 	
@@ -151,10 +151,10 @@ window.onload = function() {
 	resourcesSliderChild[resourcesSliderChild.length - 1].insertAdjacentElement("afterEnd", resourcesSliderChildFirstClone);
 	
 	
-	const resourcesSliderArrowLeft = document.querySelector('.unn-resources__slider-arrow-left');
-	const resourcesSliderArrowRight = document.querySelector('.unn-resources__slider-arrow-right');
+	const resourcesSliderArrowLeft = document.querySelector('.resources__slider-arrow-left');
+	const resourcesSliderArrowRight = document.querySelector('.resources__slider-arrow-right');
 	
-	var resourcesSliderWrap = document.querySelector('.unn-resources__slider-wrap');
+	var resourcesSliderWrap = document.querySelector('.resources__slider-wrap');
 	
 	resourcesSliderParent.style.transform = 'translateX(-' + (resourcesSliderCounter * resourcesSliderWrap.offsetWidth) + 'px)';
 	
@@ -239,14 +239,14 @@ window.onload = function() {
 	resourcesSliderArrowRight.addEventListener('click', resourcesSliderRight);
 	
 	
-	const testimonialsCarouselParent = document.querySelector('.unn-testimonials__carousel');
-	const testimonialsCarouselChild = testimonialsCarouselParent.querySelectorAll('.unn-testimonials__carousel_item');
-	const testimonialsSliderParent = document.querySelector('.unn-testimonials__slider');
-	const testimonialsSliderChild = testimonialsSliderParent.querySelectorAll('.unn-testimonials__slider_item');
-	const testimonialsSliderArrow = document.querySelector('.unn-testimonials__slider_arrow');
-	const testimonialsSliderArrowLeft = testimonialsSliderArrow.querySelector('.unn-testimonials__slider_arrow-left');
-	const testimonialsSliderArrowRight = testimonialsSliderArrow.querySelector('.unn-testimonials__slider_arrow-right');
-	const testimonialsSliderWrap = document.querySelector('.unn-testimonials__slider-wrap');
+	const testimonialsCarouselParent = document.querySelector('.testimonials__carousel');
+	const testimonialsCarouselChild = testimonialsCarouselParent.querySelectorAll('.testimonials__carousel_item');
+	const testimonialsSliderParent = document.querySelector('.testimonials__slider');
+	const testimonialsSliderChild = testimonialsSliderParent.querySelectorAll('.testimonials__slider_item');
+	const testimonialsSliderArrow = document.querySelector('.testimonials__slider_arrow');
+	const testimonialsSliderArrowLeft = testimonialsSliderArrow.querySelector('.testimonials__slider_arrow-left');
+	const testimonialsSliderArrowRight = testimonialsSliderArrow.querySelector('.testimonials__slider_arrow-right');
+	const testimonialsSliderWrap = document.querySelector('.testimonials__slider-wrap');
 	let testimonialsCarouselChildPress;
 	let testimonialsSliderCounter = 0;
 	// ширина слайда + маржины
@@ -310,7 +310,7 @@ window.onload = function() {
 	// нажатие на точку в слайдере в блоке testimonials
 	function pressTestimonialsCarousel(event) {
 		let target = event.target;
-		if (target.className != 'unn-testimonials__carousel_item') {
+		if (target.className != 'testimonials__carousel_item') {
 			return;
 		}
 		for(let i = 0; i < testimonialsCarouselChild.length; i++) {
@@ -375,18 +375,18 @@ window.onload = function() {
 	testimonialsSliderArrowRight.addEventListener('click', testimonialsSliderRight);
 	
 	
-	const helpFaqParent = document.querySelector('.unn-help__faq');
-	const helpFaqItem = helpFaqParent.querySelectorAll('.unn-help__item');
-	const helpFaqChild = helpFaqParent.querySelectorAll('.unn-help__item_subheader');
-	const helpFaqChildWrap = helpFaqParent.querySelectorAll('.unn-help__item_subheader_wrap');
-	const helpFaqChildHeader = helpFaqParent.querySelectorAll('.unn-help__item_header');
+	const helpFaqParent = document.querySelector('.help__faq');
+	const helpFaqItem = helpFaqParent.querySelectorAll('.help__item');
+	const helpFaqChild = helpFaqParent.querySelectorAll('.help__item_subheader');
+	const helpFaqChildWrap = helpFaqParent.querySelectorAll('.help__item_subheader_wrap');
+	const helpFaqChildHeader = helpFaqParent.querySelectorAll('.help__item_header');
 	
 	function helpFaqPress(event) {
 		let target = event.target;
 	
-		if (target.className != 'unn-help__item_header') {
+		if (target.className != 'help__item_header') {
 			target = target.parentNode;
-			if (target.className != 'unn-help__item_header') {
+			if (target.className != 'help__item_header') {
 				return;
 			}
 		}
@@ -409,8 +409,8 @@ window.onload = function() {
 	
 	
 	// расположение логотипа в футере по центру по вертикали
-	let footerLogo = document.querySelector('.unn-footer__logo');
-	let footerLinks = document.querySelector('.unn-footer__anchor-links');
+	let footerLogo = document.querySelector('.footer__logo');
+	let footerLinks = document.querySelector('.footer__anchor-links');
 	
 	if(window.innerWidth >= 700) {
 		footerLogo.style.transform = 'translateY(-' + ((footerLogo.offsetHeight / 2) - (footerLinks.offsetHeight / 2)) + 'px)';
