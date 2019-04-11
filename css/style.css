@@ -143,6 +143,7 @@ input {
   margin-top: 12px;
   -ms-flex-preferred-size: 33%;
   flex-basis: 33%;
+  cursor: pointer;
 }
 
 .portfolio__block_wrapper {
