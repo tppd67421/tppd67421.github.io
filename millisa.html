@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Aleksei Petrakov: millisa</title>
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-favicon.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+  <!-- Плагин FancyBox -->
+  <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" />
+  <link rel="stylesheet" href="css/millisa.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("a[rel=example_group__1]").fancybox({
+        'transitionIn': 'none',
+        'transitionOut': 'none',
+        'titlePosition': 'over',
+        'titleFormat': function (title, currentArray, currentIndex, currentOpts) {
+          return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+        }
+      });
+      $("a[rel=example_group__2]").fancybox({
+        'transitionIn': 'none',
+        'transitionOut': 'none',
+        'titlePosition': 'over',
+        'titleFormat': function (title, currentArray, currentIndex, currentOpts) {
+          return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+        }
+      });
+    });
+  </script>
+  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(50411409, "init", { id:50411409, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50411409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+
+  <div id="up"></div>
+
+  <a href="#up" class="up-arrow">
+    <img src="img/millisa/studio/left-arrow.png" alt="">
+  </a>
+
+  <section class="ajax-popup">
+    <div class="window success">
+      <div class="window__close">
+        <i class="form__close fas fa-times"></i>
+      </div>
+      <div class="window__message">
+        Ваша форма успешно отправлена
+      </div>
+    </div>
+    <div class="window error">
+      <div class="window__close">
+        <i class="form__close fas fa-times"></i>
+      </div>
+      <div class="window__message">
+        Ошибка отправки формы. Свяжитесь, пожалуйста, с администратором сайта для устранения ошибки и отправки данных
+      </div>
+    </div>
+    <div class="ajax-popup__bg"></div>
+  </section>
+
+  <section class="popup">
+    <div class="popup__form-wrap">
+      <form class="popup__form" onSubmit="event.preventDefault()">
+        <div class="form__title">Оставьте свои контактные данные чтобы мы связались с вами</div>
+        <p class="form__name">Введите свое имя:</p>
+        <input type="text" class="form__name_input" placeholder="Имя" name="user_name">
+        <p class="form__phone">Введите номер телефона:</p>
+        <input type="text" class="form__phone_input" placeholder="Телефон*" name="user_phone">
+        <p class="form__error empty">Заполните поле</p>
+        <p class="form__error correct">Введите корректные данные<br>(допустимые символы: "+", "-", "0-9")</p>
+        <button id="submit" class="form__button">Оставить заявку</button>
+        <i class="form__close fas fa-times"></i>
+      </form>
+    </div>
+    <div class="popup__bg"></div>
+  </section>
+
+  <section class="header-menu">
+    <div class="header">
+      <div class="adress">
+        <div class="adress__icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <a href="https://yandex.by/maps/2/saint-petersburg/?ll=30.319984%2C59.866645&mode=search&sll=27.561481%2C53.906145&sspn=0.230026%2C0.120420&text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80.%20165&z=16.5"
+          target="_blank" class="adress__text">Санкт-Петербург, Московский пр. 165</a>
+      </div>
+      <div class="social-icons">
+        <ul class="social">
+          <li class="social__element social__element_vk">
+            <a href="#"><i class="fab fa-vk"></i></a>
+          </li>
+          <li class="social__element social__element_fb">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li class="social__element social__element_inst">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="phone">
+        <div class="phone__icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <a href="tel:+79169885478" class="phone__text">+7 (916) 988-54-78</a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div class="menu__line"></div>
+      <ul class="main-menu">
+        <li class="main-menu__about"><a href="#about">О нас</a></li>
+        <li class="main-menu__price"><a href="#price">Услуги и цены</a></li>
+        <li class="main-menu__gallery"><a href="#gallery">Галерея</a></li>
+        <li class="main-menu__contacts"><a href="#contacts">Контакты</a></li>
+      </ul>
+      <div class="menu__line"></div>
+    </div>
+    <div class="mobile-menu">
+      <div class="gamburger">
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="small-menu__wrap">
+    <ul class="small-menu">
+      <li class="small-menu__about"><a href="#about">О нас</a></li>
+      <li class="small-menu__price"><a href="#price">Услуги и цены</a></li>
+      <li class="small-menu__gallery"><a href="#gallery">Галерея</a></li>
+      <li class="small-menu__contacts"><a href="#contacts">Контакты</a></li>
+    </ul>
+  </section>
+
+  <section class="main">
+    <div class="main-title">
+      <div class="main-title__wrap">
+        <div class="main-title__1 main-title__item">
+          <div class="main-title__img">
+            <img src="img/millisa/main/title-logo.jpg" alt="Logo" id="main-title-img-logo">
+          </div>
+          <h1 class="main-title__title">
+            “МилЛиса”<br>студия высокой культуры
+          </h1>
+          <div class="main-title__button">Онлайн запись</div>
+        </div>
+        <div class="main-title__2 main-title__item">
+          <div class="main-title__img">
+            <img src="img/millisa/main/title-logo.jpg" alt="Logo" id="main-title-img-logo">
+          </div>
+          <h1 class="main-title__title">
+            Заголовок 2<br>студия высокой культуры
+          </h1>
+          <div class="main-title__button">Онлайн запись</div>
+        </div>
+        <div class="main-title__3 main-title__item">
+          <div class="main-title__img">
+            <img src="img/millisa/main/title-logo.jpg" alt="Logo" id="main-title-img-logo">
+          </div>
+          <h1 class="main-title__title">
+            Заголовок 3<br>студия высокой культуры
+          </h1>
+          <div class="main-title__button">Онлайн запись</div>
+        </div>
+        <div class="main-title__4 main-title__item">
+          <div class="main-title__img">
+            <img src="img/millisa/main/title-logo.jpg" alt="Logo" id="main-title-img-logo">
+          </div>
+          <h1 class="main-title__title">
+            Заголовок 4<br>студия высокой культуры
+          </h1>
+          <div class="main-title__button">Онлайн запись</div>
+        </div>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="navigation__element"></div>
+      <div class="navigation__element"></div>
+      <div class="navigation__element"></div>
+      <div class="navigation__element"></div>
+    </div>
+  </section>
+
+
+  <section class="about" id="about">
+    <div class="about__title">
+      <h2>О нас</h2>
+    </div>
+    <div class="head">
+      <div class="head__line"></div>
+      <ul class="menu">
+        <li class="menu__history">История</li>
+        <li class="menu__personal">Волшебницы</li>
+        <li class="menu__work">Как творим</li>
+        <li class="menu__sterilization">Как стерилизуем материалы</li>
+      </ul>
+      <div class="head__line"></div>
+    </div>
+    <div class="content__slider">
+      <div class="content__wrap">
+        <div class="content">
+          <img src="img/millisa/about/slide-1.png" alt="History" class="content__img">
+          <p class="content__text">
+            1. Мы не знаем как добавить солнечных дней в году, однако мы знаем, где царит истинный Петербург в индустрии
+            красоты.
+            <br><br>
+            Добро пожаловать в студию МилЛиса!
+          </p>
+        </div>
+        <div class="content">
+          <img src="img/millisa/about/slide-2.png" alt="History" class="content__img">
+          <p class="content__text">
+            2. Мы не знаем как добавить солнечных дней в году, однако мы знаем, где царит истинный Петербург в индустрии
+            красоты.
+            <br><br>
+            Добро пожаловать в студию МилЛиса!
+          </p>
+        </div>
+        <div class="content">
+          <img src="img/millisa/about/slide-3.png" alt="History" class="content__img">
+          <p class="content__text">
+            3. Мы не знаем как добавить солнечных дней в году, однако мы знаем, где царит истинный Петербург в индустрии
+            красоты.
+            <br><br>
+            Добро пожаловать в студию МилЛиса!
+          </p>
+        </div>
+        <div class="content">
+          <img src="img/millisa/about/slide-4.png" alt="History" class="content__img">
+          <p class="content__text">
+            4. Мы не знаем как добавить солнечных дней в году, однако мы знаем, где царит истинный Петербург в индустрии
+            красоты.
+            <br><br>
+            Добро пожаловать в студию МилЛиса!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="studio">
+    <div class="studio__title">
+      <h2>Наша студия</h2>
+    </div>
+    <div class="slider">
+      <div class="slider__all">
+        <div class="slider__img slider__img_1">
+          <div class="slider__img_blackout"></div>
+        </div>
+        <div class="slider__img slider__img_2">
+          <div class="slider__img_blackout"></div>
+        </div>
+        <div class="slider__img slider__img_3">
+          <div class="slider__img_blackout"></div>
+        </div>
+        <div class="slider__img slider__img_4">
+          <div class="slider__img_blackout"></div>
+        </div>
+        <div class="slider__img slider__img_5">
+          <div class="slider__img_blackout"></div>
+        </div>
+        <div class="slider__img slider__img_6">
+          <div class="slider__img_blackout"></div>
+        </div>
+        <div class="slider__img slider__img_7">
+          <div class="slider__img_blackout"></div>
+        </div>
+      </div>
+      <div class="slider__button">
+        <div class="left-button__wrap">
+          <div class="left-button">
+          </div>
+        </div>
+        <div class="right-button__wrap">
+          <div class="right-button">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="price" id="price">
+    <div class="price__title">
+      <h2>Услуги и цены</h2>
+    </div>
+    <div class="price__elements">
+      <div class="element-1">
+        <a href="img/millisa/price/manicure.jpg" rel="example_group__1">
+          <div class="element-1__img"></div>
+        </a>
+        <div class="element-1__text">Маникюр</div>
+      </div>
+      <div class="element-2">
+        <a href="img/millisa/price/pedicure.jpg" rel="example_group__1">
+          <div class="element-2__img"></div>
+        </a>
+        <div class="element-2__text">Педикюр</div>
+      </div>
+      <div class="element-3">
+        <a href="img/millisa/price/make-up.jpg" rel="example_group__1">
+          <div class="element-3__img"></div>
+        </a>
+        <div class="element-3__text">Визаж и прическа</div>
+      </div>
+      <div class="element-4">
+        <a href="img/millisa/price/eyebrows.jpg" rel="example_group__1">
+          <div class="element-4__img"></div>
+        </a>
+        <div class="element-4__text">Брови</div>
+      </div>
+      <div class="element-5">
+        <a href="img/millisa/price/eyelashes.jpg" rel="example_group__1">
+          <div class="element-5__img"></div>
+        </a>
+        <div class="element-5__text">Ресницы</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="gallery__title">
+      <h2>Галерея</h2>
+    </div>
+    <div class="gallery__subtitle">Ни дня без сюрприза</div>
+    <div class="gallery__img">
+      <a href="img/millisa/gallery/photo-1b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-1s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-2b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-2s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-3b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-3s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-4b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-4s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-5b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-5s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-6b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-6s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-7b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-7s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-8b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-8s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-9b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-9s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-10b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-10s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-11b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-11s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-12b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-12s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-13b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-13s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-14b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-14s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-15b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-15s.jpg" alt=""></a>
+      <a href="img/millisa/gallery/photo-16b.jpg" rel="example_group__2"><img src="img/millisa/gallery/photo-16s.jpg" alt=""></a>
+    </div>
+    <div class="gallery__btn">Онлайн запись</div>
+  </section>
+
+
+  <section class="footer" id="contacts">
+    <div class="footer__title">Студия маникюра “МилЛиса”</div>
+    <div class="menu-social">
+      <ul class="menu">
+        <li class="menu__element"><a href="#up">Главная</a></li>
+        <li class="menu__element"><a href="#about">О студии</a></li>
+        <li class="menu__element"><a href="#price">Услуги и цены</a></li>
+        <li class="menu__element"><a href="#gallery">Наши работы</a></li>
+      </ul>
+      <ul class="social">
+        <li class="social__element social__element_vk">
+          <a href="#"><i class="fab fa-vk"></i></a>
+        </li>
+        <li class="social__element social__element_fb">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li class="social__element social__element_inst">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="phone-adress">
+      <div class="phone">
+        <div class="phone__icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <a href="tel:+79169885478" class="phone__text">+7 (916) 988-54-78</a>
+      </div>
+      <div class="adress">
+        <a href="https://yandex.by/maps/2/saint-petersburg/?ll=30.319984%2C59.866645&mode=search&sll=27.561481%2C53.906145&sspn=0.230026%2C0.120420&text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80.%20165&z=16.5"
+          target="_blank">Санкт-Петербург, Московский пр. 165</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="brd">
+    <div class="brd__created">Created by</div>
+    <a href="/" class="brd__name">Aleksei Petrakov</a>
+	</section>
+
+  <script src="js/millisa.js" defer></script>
+
+</body>
+
+</html>

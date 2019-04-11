@@ -1,0 +1,154 @@
+@media (max-width: 420px)
+  $font-size: 35px
+  .popup
+    .form
+      &__button
+        padding: 15px 0
+  .header-menu
+    display: flex
+    flex-direction: column
+  .header
+    flex-direction: column
+    align-items: center
+    text-align: center
+    position: relative
+    .adress
+      margin-bottom: 10px
+    .social-icons
+      display: none
+    .phone
+      &__icon
+        display: block
+  .menu
+    display: none
+  .mobile-menu
+    display: flex
+    order: -1
+    padding: 25px 0
+    z-index: 7
+    cursor: pointer
+    transition: top 500ms
+    width: 100%
+    .gamburger
+      display: block
+  .small-menu
+    transition: 500ms
+    top: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 110vh
+    width: 100vw
+    z-index: 8
+    position: absolute
+    background-color: #00abbf
+    pointer-events: none
+    &.active
+      top: 0
+      pointer-events: auto
+    &__wrap
+      display: block
+      overflow: hidden
+      position: fixed
+      width: 100vw
+      height: 100vh
+      top: 0
+      z-index: 6
+      pointer-events: none
+    li
+      margin: 20px 0
+      a
+        color: #ffffff
+        font-family: 'Lato'
+        font-size: 21px
+  .main
+    height: 620px
+    &-title
+      &__item
+        height: 380px !important
+      &__img
+        img
+          height: 110px !important
+      &__title
+        font-size: 33px !important
+        line-height: 40px !important
+      &__button
+        padding: 20px 0
+        max-width: 270px
+        width: 100%
+      &__wrap
+  .about
+    padding: 40px 0
+    &__title
+      margin-bottom: 20px
+      h2
+        font-size: $font-size
+    .head
+      margin: 0
+      .menu
+        text-align: center
+        z-index: 2
+        position: static
+        cursor: auto
+    .content
+      &__wrap
+        height: 430px
+      &__img
+        display: none
+  .studio
+    &__title
+      margin-bottom: 20px !important
+    .slider
+      height: 170px
+    &__title
+      margin: 0
+      h2
+        font-size: $font-size
+    .slider
+      &__img
+        @for $i from 1 through 7
+          &_#{$i}
+            width: 230px
+            height: 170px
+      &__button
+        .left-button,
+        .right-button
+          &__wrap
+            width: 40px
+            height: 40px
+  .price
+    padding-bottom: 50px
+    &__title
+      margin-bottom: 30px
+      text-align: center
+      h2
+        font-size: $font-size
+    &__elements
+    @for $i from 1 through 5
+      .element-#{$i}
+        &__img
+          width: 201px
+          height: 122px
+          &_wrap
+            width: 216px
+            height: 137px
+  .gallery
+    padding-bottom: 60px
+    &__title
+      margin-bottom: 10px
+      h2
+        font-size: $font-size
+    &__subtitle
+      font-size: 25px
+      margin-bottom: 30px
+    &__img
+      margin-bottom: 30px
+      img
+        height: 220px
+    &__btn
+      max-width: 270px
+      width: 90%
+  .footer
+    .menu
+      position: static
