@@ -1,0 +1,96 @@
+@import "https://nomail.com.ua/api/font-face/8436.css"
+
+@font-face
+  font-family: 'Lato';
+  src: local('Lato Regular'), local('Lato-Regular'), url('../font/latoregular.woff2') format('woff2'), url('../font/latoregular.woff') format('woff'), url('../font/latoregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+
+@font-face
+  font-family: 'Century Gothic Bold'
+  src: url('../font/CenturyGothic-Bold.eot')
+  src: url('../font/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'), url('../font/CenturyGothic-Bold.woff') format('woff'), url('../font/CenturyGothic-Bold.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+$dark-text: #242424
+
+@mixin bg-title
+  display: flex
+  justify-content: center
+  margin-bottom: 30px
+  padding: 0 5%
+  line-height: 37px
+  h2
+    color: #ffffff
+    font-family: 'Century Gothic Bold'
+    font-size: 48px
+    color: $dark-text
+    padding: 10px 20px
+    border: 3px solid #242424
+
+@mixin button
+  font-family: 'Lato'
+  text-transform: uppercase
+  padding: 20px 0
+  background-color: #00abbf
+  color: #fff
+  display: flex
+  justify-content: center
+  width: 270px
+  cursor: pointer
+  font-size: 18px
+  letter-spacing: 1px
+
+body
+  background-image: url(../img/bg.jpg)
+  background-size: cover
+  background-attachment: fixed
+  width: 100%
+
+.up-arrow
+  transition: 300ms
+  position: fixed
+  bottom: -70px
+  right: 10px
+  z-index: 6
+  width: 60px
+  height: 60px
+  background-color: #007987
+  border-radius: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    transform: rotate(90deg)
+    position: relative
+
+#fancybox
+  &-left,
+  &-right
+    visibility: visible
+  &-left
+    span
+      left: 20px
+  &-right
+    span
+      left: auto
+      right: 20px
+      
+
+@import 'reset'
+@import 'ajax-popup'
+@import 'popup'
+@import 'header'
+@import 'small-menu-wrap'
+@import 'menu'
+@import 'main'
+@import 'about'
+@import 'studio'
+@import 'price'
+@import 'gallery'
+@import 'footer'
+@import 'request'
+@import 'media-1200'
+@import 'media-800'
+@import 'media-420'

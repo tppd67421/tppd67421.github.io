@@ -1,0 +1,58 @@
+.menu
+	display: flex
+	align-items: center
+	justify-content: space-between
+	width: 85%
+	margin: 40px auto
+	&__all
+		display: flex
+		flex-direction: row
+		width: 100%
+		justify-content: space-between
+	&__logo
+		div
+			background-image: url(../img/menu-logo.svg)
+			display: inline-block
+			width: 120px
+			height: 24px
+	&__list
+		display: flex
+		justify-content: space-between
+		margin-left: 35px
+		width: 278px
+		a
+			color: $text-color-dark
+			font-size: 16px
+			transition: 200ms
+			&:hover
+				opacity: .8
+	&__social
+		@include social
+		li
+			transition: 250ms
+			&:hover
+				opacity: .8
+	&__gamburger
+		display: none
+		transform: translateX(-5px)
+		cursor: pointer
+		height: 20px
+		width: 30px
+		span:after,
+		span:before
+			content: ''
+			position: absolute
+			width: 30px
+			border-bottom: 4px solid #1F2431
+			transition: 200ms
+		span:after
+			top: 0
+		span:before
+			top: 16px
+		&_active
+			span:after
+				top: 8px
+				transform: translateY(0) rotate(45deg)
+			span:before
+				top: 8px
+				transform: translateY(0) rotate(-45deg)

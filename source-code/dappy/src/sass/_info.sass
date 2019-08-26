@@ -1,0 +1,132 @@
+.info
+	width: 1150px
+	margin: 0 auto
+	&-item
+		background-color: #F6FAFF
+		border-radius: 6px
+		margin: 5px 5px
+		width: 565px
+		box-sizing: border-box
+
+	&__multi,
+	&__source,
+	&__tokens,
+	&__roadmap,
+	&__exchange
+		padding: 0 40px
+		&_title
+			@include info-title
+			margin-bottom: 69px
+		&_img
+			div
+				margin-left: 50%
+				transform: translateX(-50%)
+				margin-bottom: 84px
+		&_text
+			@include info-text
+	
+	&__wallet
+		height: 220px
+		display: flex
+		justify-content: center
+		align-items: center
+		&_text
+			@include info-text
+			width: 485px
+
+	&__multi
+		height: 505px
+		&_img
+			div
+				background-size: cover
+				background-image: url(../img/info/info-multi-currencies.svg)
+				width: 366px
+				height: 198px
+
+	&__source
+		height: 440px
+		&_title
+			margin-bottom: 72px
+		&_img
+			div
+				background-size: cover
+				background-image: url(../img/info/info-source.svg)
+				width: 369px
+				height: 162px
+				margin-bottom: 54px
+		&_text
+			width: 390px
+			span
+				font-weight: 700
+
+	&__tokens
+		height: 440px
+		&_img
+			div
+				background-size: cover
+				background-image: url(../img/info/info-tokens.svg)
+				width: 402px
+				height: 145px
+				margin-bottom: 74px
+
+	&__roadmap
+		height: 725px
+		&_title
+			margin-bottom: 43px
+		.info__map
+			&_img
+				display: flex
+				width: 312px
+				align-items: center
+				justify-content: space-between
+				margin-bottom: 5px
+				&_green
+					background-image: url(../img/info/info-ellipse-green.svg)
+					width: 20px
+					height: 20px
+				&_blue
+					background-image: url(../img/info/info-ellipse-blue.svg)
+					width: 20px
+					height: 20px
+				&_grey
+					background-image: url(../img/info/info-grey.svg)
+					width: 20px
+					height: 20px
+				&_line
+					width: 114px
+					border-top: 2px solid #EEEEFF
+				&_ellipsis
+					background-image: url(../img/info/info-ellipsis.svg)
+					width: 22px
+					height: 6px
+				&_special
+					margin-bottom: 28px
+			&_date_left,
+			&_date_right
+				@include info-map-date
+			&_date_right
+				margin-left: 312px - 20px
+			&_text
+				display: flex
+				margin-bottom: 35px
+				div
+					width: 125px
+					margin-right: 20px + 6px + 114px + 6px - 125px
+					font-weight: 300
+					line-height: 18px
+					font-size: 12px
+					color: $text-color-light
+					
+	&__exchange
+		height: 440px
+		&_title
+			margin-bottom: 20px
+		&_img
+			div
+				background-image: url(../img/info/info-exchange.svg)
+				background-size: cover
+				width: 381px
+				height: 195px
+
+h3
+	margin-top: 24px
