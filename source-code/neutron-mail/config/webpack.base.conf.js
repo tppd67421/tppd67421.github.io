@@ -22,8 +22,7 @@ module.exports = {
   },
   output: {
     filename: `${PATHS.assets}js/[name].js`,
-    path: PATHS.dist,
-    // publicPath: '/'
+    path: PATHS.dist
   },
   module: {
     rules: [{
@@ -34,15 +33,11 @@ module.exports = {
       test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
       loader: 'file-loader',
       options: {
-        name: './../fonts/[name].[ext]'
+        name: 'assets/fonts/[name].[ext]'
       }
     }, {
       test: /\.(png|jp(e*)g|gif|svg)$/,  
-      loader: 'url-loader',
-      options: {
-        // outputPath: 'images',
-        // name: '[name].[ext]'
-      }
+      loader: 'url-loader'
     }, {
       test: /\.scss$/,
       use: [
@@ -52,12 +47,7 @@ module.exports = {
           loader: 'css-loader',
           options: {
             sourceMap: true,
-            url: url => {
-              if (url.includes('img.png')) {
-                return false;
-              }
-              return true;
-            }
+            url: true
           }
         }, {
           loader: 'postcss-loader',
@@ -89,7 +79,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: `${PATHS.assets}css/[name].css`,
+      filename: `[name].css`,
     }),
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
