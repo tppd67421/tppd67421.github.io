@@ -219,7 +219,7 @@ input {
   transform: translateX(-11px);
 }
 
-.footer__social_cv,
+.footer__social_gh,
 .footer__social_tg,
 .footer__social_vk {
   background-size: contain;
@@ -229,8 +229,8 @@ input {
   height: 20px;
 }
 
-.footer__social_cv {
-  background-image: url("../img/cv.svg");
+.footer__social_gh {
+  background-image: url("../img/gh.svg");
   background-position: 0% 0%;
 }
 
@@ -375,7 +375,7 @@ input {
     margin-bottom: 20px;
   }
 
-  .footer__social_cv,
+  .footer__social_gh,
   .footer__social_tg,
   .footer__social_vk {
     width: 22px;
