@@ -85,8 +85,7 @@ button, input {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 86%;
+  margin: 0 7%;
   padding: 27px 0;
 }
 
@@ -332,7 +331,7 @@ button, input {
     font-size: 15px;
     width: 185px;
   }
-  .header__title, .type {
+  .header__title, .type, .menu__wrap {
     margin: 0 7.5%;
   }
   .type {
@@ -429,7 +428,7 @@ button, input {
 
 @media (max-width: 600px) {
   .menu__wrap {
-    width: 90%;
+    margin: 0 6.5%;
   }
   .menu__logo {
     font-size: 20px;
@@ -712,8 +711,7 @@ button, input {
 }
 
 @media (max-width: 600px) {
-  .about,
-  .about-header__title {
+  .about, .about-header__title {
     margin: 0 6.5%;
   }
   .about p {
