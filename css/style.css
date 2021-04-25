@@ -262,8 +262,7 @@ button, input {
 }
 
 .portfolio__item.hidden {
-  width: 0;
-  margin: 0;
+  display: none;
 }
 
 .portfolio__item_link {
