@@ -9,38 +9,30 @@
   <link rel="apple-touch-icon-precomposed" href="img/apple-touch-favicon.png" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/sticky-footer.css">
-  <!-- Yandex.Metrika counter -->
-  <script
-    type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(50411409, "init", { id: 50411409, clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true });</script>
-  <noscript>
-    <div><img src="https://mc.yandex.ru/watch/50411409" style="position:absolute; left:-9999px;" alt="" /></div>
-  </noscript> <!-- /Yandex.Metrika counter -->
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
 
   <div id="up"></div>
 
+  <header class="menu">
+    <div class="menu__wrap">
+      <div class="menu__logo">
+        <a href="/">Petrakov</a>
+      </div>
+      <ul class="menu__right">
+        <li>
+          <a class="menu__right_link" href="about">Обо мне</a>
+        </li>
+        <li>
+          <a class="menu__right_link" href="contacts">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </header>
 
   <section class="container">
-    <div class="menu">
-      <div class="menu__wrap">
-        <div class="menu__logo">
-          <a href="/">Petrakov</a>
-        </div>
-        <ul class="menu__right">
-          <li class="menu__right_about-us">
-            <a href="about">Обо мне</a>
-          </li>
-          <li class="menu__right_contacts">
-            <a href="contacts">Контакты</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-
     <div class="header">
       <div class="header__title">
         <h1>Aleksei Petrakov</h1>
@@ -53,7 +45,7 @@
       <li><button class="type__button" data-filter="application">Applications</button></li>
       <li><button class="type__button" data-filter="markup">Markup</button></li>
     </ol>
-    
+
     <ol class="portfolio">
 
       <!-- GTN 750Xi -->
@@ -131,7 +123,7 @@
 
 
 
-  <section class="footer">
+  <footer class="footer">
     <p class="footer__copyright">
       &copy; Aleksei Petrakov, 2021
     </p>
@@ -151,10 +143,13 @@
         <div class="footer__social_vk"></div>
       </a>
     </div>
-  </section>
+  </footer>
 
-
-  <script src="js/main.js" defer></script>
+  <!-- Yandex.Metrika counter -->
+  <script> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metricatag.js", "ym"); ym(50411409, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true });</script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/50411409" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- /Yandex.Metrika counter -->
 </body>
 
 </html>

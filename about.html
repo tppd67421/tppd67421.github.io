@@ -1,78 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Aleksei Petrakov: about us</title>
+  <meta charset="UTF-8">
+  <title>Aleksei Petrakov: about us</title>
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/png" href="img/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-favicon.png"/>
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-favicon.png" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/about-menu-active.css">
-  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(50411409, "init", { id:50411409, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50411409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <script src="js/main.js" defer></script>
 </head>
+
 <body>
 
-	<div id="up"></div>
+  <div id="up"></div>
 
-  <div class="menu">
+  <header class="menu">
     <div class="menu__wrap">
       <div class="menu__logo">
         <a href="/">Petrakov</a>
       </div>
       <ul class="menu__right">
-        <li class="menu__right_about-us">
-          <a href="about">Обо мне</a>
+        <li>
+          <a class="menu__right_link active" href="about">Обо мне</a>
         </li>
-        <li class="menu__right_contacts">
-          <a href="contacts">Контакты</a>
+        <li>
+          <a class="menu__right_link" href="contacts">Контакты</a>
         </li>
       </ul>
     </div>
-  </div>
+  </header>
 
-
-	<div class="about-header">
-    <div class="about-header__title header__title">
-      <h1>Привет. Меня зовут Алексей</h1>
-    </div>
-  </div>
-  
-  <div class="about">
-    <p>
-      Мне 20 лет и я студент. Родился в уютном городе Минск (Беларусь), в котором я сейчас и живу. Я студент 3 курса и учусь в БГУИРе на специальности «информационные технологии и управление».
-    </p>
-    <p>
-      С давних пор я активный пользователь ПК и много времени проводил в Интернете на всевозможных сайтах. И совсем недавно начал задаваться вопросом: а как же они работают? С этого момента я начал изучать сайтостроение.
-    </p>
-    <p>
-      Первым делом ознакомился с HTML и CSS (хотя сейчас для написания стилей я больше использую SASS, чем чистый CSS). Потом прошелся по адаптиву, кроссбраузерности и затронул таск-менеджер gulp. Он вместо меня выполняет рутинные вещи, позволяя уделять больше времени на более сложные и интересные задачи. Потом поверхностно познакомился с PHP, благодаря которому я могу настроить отправку формы с сайта на электронную почту/собщения ВК/Телеграм. Также могу написать несложный мультилендинг или натянуть верстку на WordPress с выгрузкой на хостинг. Знание JavaScript позволяет мне добавить сайту большей интерактивности . Иногда пользуюсь готовыми JS библиотеками для уменьшения времени работы над проектом. На данный момент именно изучению JS я уделяю большее внимание.
-      В процессе работы дополнительно ознакомился со сферой веб-дизайна и моих навыков хватит для создания макета сайта, либо для исправления ошибок в уже существующем макете.
-    </p>
-    <p>
-      Если Вы заинтересованы в сотрудничестве со мной, то то можете ознакомиться с моим резюме <a href="Aleksei_Petrakov_resume.pdf" target="_blank">по ссылке</a>. Для связи со мной перейдите на страницу <a href="contacts">контакты</a> и выберите любой удобный для вас способ. Если у вас есть проект, либо вы хотите просто пообщаться или высказать замечание по поводу моих работ – напишите мне. Я всегда открыт как для новых проектов, так и для обычного общения :)
-    </p>
-  </div>
-
-
-  <div class="about__portfolio">
-
-    <div class="about__portfolio_block">
-      <img src="img/about/about-1.jpg" alt="Picture-description">
-    </div>
-    
-    <div class="about__portfolio_block">
-      <img src="img/about/about-2.jpg" alt="Picture-description">
-    </div>
-    
-    <div class="about__portfolio_block">
-      <img src="img/about/about-3.jpg" alt="Picture-description">
+  <section class="container">
+    <div class="about-header">
+      <div class="about-header__title header__title">
+        <h1>Привет. Меня зовут Алексей</h1>
+      </div>
     </div>
 
-  </div>
+    <div class="about">
+      <p>
+        Мне 20 лет и я студент. Родился в уютном городе Минск (Беларусь), в котором я сейчас и живу. Я студент 3 курса и
+        учусь в БГУИРе на специальности «информационные технологии и управление».
+      </p>
+      <p>
+        С давних пор я активный пользователь ПК и много времени проводил в Интернете на всевозможных сайтах. И совсем
+        недавно начал задаваться вопросом: а как же они работают? С этого момента я начал изучать сайтостроение.
+      </p>
+      <p>
+        Первым делом ознакомился с HTML и CSS (хотя сейчас для написания стилей я больше использую SASS, чем чистый
+        CSS).
+        Потом прошелся по адаптиву, кроссбраузерности и затронул таск-менеджер gulp. Он вместо меня выполняет рутинные
+        вещи, позволяя уделять больше времени на более сложные и интересные задачи. Потом поверхностно познакомился с
+        PHP,
+        благодаря которому я могу настроить отправку формы с сайта на электронную почту/собщения ВК/Телеграм. Также могу
+        написать несложный мультилендинг или натянуть верстку на WordPress с выгрузкой на хостинг. Знание JavaScript
+        позволяет мне добавить сайту большей интерактивности . Иногда пользуюсь готовыми JS библиотеками для уменьшения
+        времени работы над проектом. На данный момент именно изучению JS я уделяю большее внимание.
+        В процессе работы дополнительно ознакомился со сферой веб-дизайна и моих навыков хватит для создания макета
+        сайта,
+        либо для исправления ошибок в уже существующем макете.
+      </p>
+      <p>
+        Если Вы заинтересованы в сотрудничестве со мной, то то можете ознакомиться с моим резюме <a
+          href="Aleksei_Petrakov_resume.pdf" target="_blank">по ссылке</a>. Для связи со мной перейдите на страницу <a
+          href="contacts">контакты</a> и выберите любой удобный для вас способ. Если у вас есть проект, либо вы хотите
+        просто пообщаться или высказать замечание по поводу моих работ – напишите мне. Я всегда открыт как для новых
+        проектов, так и для обычного общения :)
+      </p>
+    </div>
 
 
-  <section class="footer">
+    <div class="about__portfolio">
+      <div class="about__portfolio_block">
+        <img src="img/about/about-1.jpg" alt="Picture-description">
+      </div>
+
+      <div class="about__portfolio_block">
+        <img src="img/about/about-2.jpg" alt="Picture-description">
+      </div>
+
+      <div class="about__portfolio_block">
+        <img src="img/about/about-3.jpg" alt="Picture-description">
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
     <p class="footer__copyright">
       &copy; Aleksei Petrakov, 2021
     </p>
@@ -92,9 +108,13 @@
         <div class="footer__social_vk"></div>
       </a>
     </div>
-  </section>
+  </footer>
 
-
-	<script src="js/main.js" defer></script>
+  <!-- Yandex.Metrika counter -->
+  <script> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(50411409, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true });</script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/50411409" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- /Yandex.Metrika counter -->
 </body>
+
 </html>

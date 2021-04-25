@@ -1,3 +1,30 @@
+/* sticky footer start */
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu {
+	flex: 0 0 auto;
+}
+
+.container {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+/* sticky footer end */
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: #2E2E2E;
@@ -90,13 +117,13 @@ button, input {
   align-items: center;
 }
 
-.menu__right a {
+.menu__right_link {
   position: relative;
   -webkit-transition: 250ms;
   transition: 250ms;
 }
 
-.menu__right a:before {
+.menu__right_link:before {
   content: '';
   bottom: 0;
   left: 0;
@@ -109,11 +136,13 @@ button, input {
   transform: translateX(-50%);
 }
 
-.menu__right a:hover {
+.menu__right_link.active,
+.menu__right_link:hover {
   color: #E22A2A;
 }
 
-.menu__right a:hover:before {
+.menu__right_link.active:before,
+.menu__right_link:hover:before {
   width: 100%;
 }
 
