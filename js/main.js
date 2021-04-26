@@ -1,8 +1,8 @@
-const anchors = document.querySelectorAll('a[href*="#"]')
+var anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault()
-        const blockID = anchor.getAttribute('href')
+        var blockID = anchor.getAttribute('href')
         document.querySelector('' + blockID).scrollIntoView({
             behavior: 'smooth',
             block: 'start'
@@ -11,16 +11,18 @@ for (let anchor of anchors) {
 }
 
 
-const type = document.querySelector('.type')
+var type = document.querySelector('.type')
 if (type) {
     const typeButtons = type.querySelectorAll('.type__button')
     const portfolioList = document.querySelectorAll('.portfolio__item')
-    typeButtons.forEach(button => button.addEventListener('click', applyFilter))
+    typeButtons.forEach(function (button) {
+        button.addEventListener('click', applyFilter)
+    })
 
     function applyFilter(e) {
         const currentFilter = e.target.getAttribute('data-filter')
 
-        portfolioList.forEach(portfolioItem => {
+        portfolioList.forEach(function (portfolioItem) {
             if (currentFilter === 'all') {
                 portfolioItem.classList.remove('hidden')
             } else {
@@ -32,7 +34,9 @@ if (type) {
             }
         })
 
-        typeButtons.forEach(button => button.classList.remove('active'))
+        typeButtons.forEach(function (button) {
+            button.classList.remove('active')
+        })
         e.target.classList.add('active')
     }
 }
