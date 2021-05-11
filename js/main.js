@@ -1,5 +1,5 @@
 var anchors = document.querySelectorAll('a[href*="#"]')
-for (let anchor of anchors) {
+for (var anchor of anchors) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault()
         var blockID = anchor.getAttribute('href')
