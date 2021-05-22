@@ -1,123 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aleksei Petrakov: about</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Aleksei Petrakov: front-end developer" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/smoothscrollPolyfill.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Aleksei Petrakov: about</title>
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Aleksei Petrakov: front-end developer">
-  <link rel="icon" type="image/png" href="img/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-favicon.png" />
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
-</head>
+  <body>
+    <div id="up"></div>
 
-<body>
-
-  <div id="up"></div>
-
-  <header class="menu">
-    <div class="menu__wrap">
-      <div class="menu__logo">
-        <a href="/">Petrakov</a>
+    <header class="menu">
+      <div class="menu__wrap">
+        <div class="menu__logo">
+          <a href="/">Petrakov</a>
+        </div>
+        <ul class="menu__right">
+          <li>
+            <a class="menu__right_link active" href="about">Обо мне</a>
+          </li>
+          <li>
+            <a class="menu__right_link" href="contacts">Контакты</a>
+          </li>
+        </ul>
       </div>
-      <ul class="menu__right">
-        <li>
-          <a class="menu__right_link active" href="about">Обо мне</a>
-        </li>
-        <li>
-          <a class="menu__right_link" href="contacts">Контакты</a>
-        </li>
-      </ul>
-    </div>
-  </header>
+    </header>
 
-  <section class="container">
-    <div class="about-header">
-      <div class="about-header__title header__title">
-        <h1>Привет. Меня зовут Алексей</h1>
+    <section class="container">
+      <div class="about-header">
+        <div class="about-header__title header__title">
+          <h1>Привет. Меня зовут Алексей</h1>
+        </div>
       </div>
-    </div>
 
-    <div class="about">
-      <p>
-        Я занимаюсь фронтенд разработкой долгое время. Начинал с обычной верстки. В самом начале своего пути я верстал
-        лендинги,
-        корпоративные сайты. Так же я получил знания и опыт работы с CMS системами.
-      </p>
-      <p>
-        Вдоволь наверставшись я попал в другую команду уже как фронтенд разработчик. Основной моей деятельностью была
-        разработка
-        интерфейсов с использованием jQuery, но в целом мои задачи были весьма разноплановыми. Иногда приходилось
-        верстать, рисовать UI элементы в Figma и даже пришлось работать с PHP и Python.
-      </p>
-      <p>
-        Потом, чтобы двигаться дальше, я подтянул свои знания в React и начал выполнять некоторые заказы с разработкой
-        веб-приложений. Мне удалось поработать со многими вещами: управление состоянием
-        при помощи Redux, типы с Typescript, Redux Thunk в качестве middleware библиотеки и написание unit тестов.
-      </p>
-      <p>
-        /* сейчас я нахожусь здесь */
-      </p>
-      <p>
-        Хоть я и обладаю некоторыми знаниями о бэке и могу написать что-то несложное на PHP, Node или Python, но мои
-        знания
-        очень
-        поверхностные и в будущем я хотел бы параллельно с фронтендом развиваться еще и в бэкенд направлении.
-      </p>
-      <p>
-        Для связи со мной перейдите на страницу <a href="contacts">контакты</a> и выберите любой удобный для вас способ.
-        Если у вас есть проект, либо вы хотите
-        просто пообщаться или высказать замечание по поводу моих работ – напишите мне. Я всегда открыт как для новых
-        проектов, так и для обычного общения :)
-      </p>
-    </div>
+      <div class="about">
+        <p>
+          Я занимаюсь фронтенд разработкой долгое время. Начинал с обычной верстки. В самом начале
+          своего пути я верстал лендинги, корпоративные сайты. Так же я получил знания и опыт работы
+          с CMS системами.
+        </p>
+        <p>
+          Вдоволь наверставшись я попал в другую команду уже как фронтенд разработчик. Основной моей
+          деятельностью была разработка интерфейсов с использованием jQuery, но в целом мои задачи
+          были весьма разноплановыми. Иногда приходилось верстать, рисовать UI элементы в Figma и
+          даже пришлось работать с PHP и Python.
+        </p>
+        <p>
+          Потом, чтобы двигаться дальше, я подтянул свои знания в React и начал выполнять некоторые
+          заказы с разработкой веб-приложений. Мне удалось поработать со многими вещами: управление
+          состоянием при помощи Redux, типы с Typescript, Redux Thunk в качестве middleware
+          библиотеки и написание unit тестов.
+        </p>
+        <p>/* сейчас я нахожусь здесь */</p>
+        <p>
+          Хоть я и обладаю некоторыми знаниями о бэке и могу написать что-то несложное на PHP, Node
+          или Python, но мои знания очень поверхностные и в будущем я хотел бы параллельно с
+          фронтендом развиваться еще и в бэкенд направлении.
+        </p>
+        <p>
+          Для связи со мной перейдите на страницу
+          <a href="contacts">контакты</a> и выберите любой удобный для вас способ. Если у вас есть
+          проект, либо вы хотите просто пообщаться или высказать замечание по поводу моих работ –
+          напишите мне. Я всегда открыт как для новых проектов, так и для обычного общения :)
+        </p>
+      </div>
 
+      <ol class="portfolio portfolio_about">
+        <li class="portfolio__item">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="img/about/about-1-full.png"
+          >
+            <img
+              class="portfolio__item_image"
+              src="img/about/about-1.png"
+              alt="Picture-description"
+            />
+          </a>
+        </li>
 
-    <ol class="portfolio portfolio_about">
-      <li class="portfolio__item">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="img/about/about-1-full.png">
-          <img class="portfolio__item_image" src="img/about/about-1.png" alt="Picture-description">
+        <li class="portfolio__item">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="img/about/about-2-full.png"
+          >
+            <img
+              class="portfolio__item_image"
+              src="img/about/about-2.png"
+              alt="Picture-description"
+            />
+          </a>
+        </li>
+
+        <li class="portfolio__item">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="img/about/about-3-full.png"
+          >
+            <img
+              class="portfolio__item_image"
+              src="img/about/about-3.png"
+              alt="Picture-description"
+            />
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; Aleksei Petrakov, 2021</p>
+      <div class="footer__up">
+        <a class="footer__up_link" href="#up">
+          <img class="footer__up_icon" src="img/up.svg" alt="Up icon" />
         </a>
-      </li>
-
-      <li class="portfolio__item">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="img/about/about-2-full.png">
-          <img class="portfolio__item_image" src="img/about/about-2.png" alt="Picture-description">
+      </div>
+      <div class="footer__social">
+        <a
+          class="footer__social_link"
+          href="https://github.com/tppd67421"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img class="footer__social_gh" src="img/gh.svg" alt="Github icon" />
         </a>
-      </li>
-
-      <li class="portfolio__item">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="img/about/about-3-full.png">
-          <img class="portfolio__item_image" src="img/about/about-3.png" alt="Picture-description">
+        <a
+          class="footer__social_link"
+          href="https://t.me/tppd67421"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img class="footer__social_tg" src="img/tg.svg" alt="Telegram icon" />
         </a>
-      </li>
-    </ol>
-  </section>
-
-
-  <footer class="footer">
-    <p class="footer__copyright">
-      &copy; Aleksei Petrakov, 2021
-    </p>
-    <div class="footer__up">
-      <a class="footer__up_link" href="#up">
-        <img class="footer__up_icon" src="img/up.svg" alt="Up icon">
-      </a>
-    </div>
-    <div class="footer__social">
-      <a class="footer__social_link" href="https://github.com/tppd67421" rel="noreferrer" target="_blank">
-        <img class="footer__social_gh" src="img/gh.svg" alt="Github icon">
-      </a>
-      <a class="footer__social_link" href="https://t.me/tppd67421" rel="noreferrer" target="_blank">
-        <img class="footer__social_tg" src="img/tg.svg" alt="Telegram icon">
-      </a>
-      <a class="footer__social_link" href="https://vk.com/tppd67421" rel="noreferrer" target="_blank">
-        <img class="footer__social_vk" src="img/vk.svg" alt="Vk icon">
-      </a>
-    </div>
-  </footer>
-
-</body>
-
+        <a
+          class="footer__social_link"
+          href="https://vk.com/tppd67421"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img class="footer__social_vk" src="img/vk.svg" alt="Vk icon" />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

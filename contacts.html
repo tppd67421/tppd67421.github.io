@@ -1,83 +1,112 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Aleksei Petrakov: contacts</title>
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Aleksei Petrakov: front-end developer">
-  <link rel="icon" type="image/png" href="img/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-favicon.png" />
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
-</head>
-<body>
-	<div id="up"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aleksei Petrakov: contacts</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Aleksei Petrakov: front-end developer" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/smoothscrollPolyfill.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="up"></div>
 
-  <header class="menu">
-    <div class="menu__wrap">
-      <div class="menu__logo">
-        <a href="/">Petrakov</a>
+    <header class="menu">
+      <div class="menu__wrap">
+        <div class="menu__logo">
+          <a href="/">Petrakov</a>
+        </div>
+        <ul class="menu__right">
+          <li>
+            <a class="menu__right_link" href="about">Обо мне</a>
+          </li>
+          <li>
+            <a class="menu__right_link active" href="contacts">Контакты</a>
+          </li>
+        </ul>
       </div>
-      <ul class="menu__right">
-        <li>
-          <a class="menu__right_link" href="about">Обо мне</a>
-        </li>
-        <li>
-          <a class="menu__right_link active" href="contacts">Контакты</a>
-        </li>
-      </ul>
-    </div>
-  </header>
+    </header>
 
-
-	<section class="container">
-    <div class="header">
+    <section class="container">
+      <div class="header">
         <div class="header__title">
           <h1>Напишите мне</h1>
-          <p>Ниже представлено несколько вариантов для связи со мной. Выберите удобный для вас и напишите мне.</p>
+          <p>
+            Ниже представлено несколько вариантов для связи со мной. Выберите удобный для вас и
+            напишите мне.
+          </p>
         </div>
       </div>
-    
+
       <div class="contacts">
         <div class="contacts__element">
           <div class="contacts__element_icon_email"></div>
           <p class="contacts__element_header contacts__element_header_email">Email:</p>
-          <a href="mailto:tppd67421@gmail.com" class="contacts__element_info">tppd67421@gmail.com</a>
+          <a href="mailto:tppd67421@gmail.com" class="contacts__element_info"
+            >tppd67421@gmail.com</a
+          >
         </div>
         <div class="contacts__element">
           <div class="contacts__element_icon_tg"></div>
           <p class="contacts__element_header contacts__element_header_tg">Telegram:</p>
-          <a href="https://t.me/tppd67421" class="contacts__element_info" rel="noreferrer" target="_blank">t.me/tppd67421</a>
+          <a
+            href="https://t.me/tppd67421"
+            class="contacts__element_info"
+            rel="noreferrer"
+            target="_blank"
+            >t.me/tppd67421</a
+          >
         </div>
         <div class="contacts__element">
           <div class="contacts__element_icon_vk"></div>
           <p class="contacts__element_header contacts__element_header_vk">ВКонтакте:</p>
-          <a href="https://vk.com/tppd67421" class="contacts__element_info" rel="noreferrer" target="_blank">vk.com/tppd67421</a>
+          <a
+            href="https://vk.com/tppd67421"
+            class="contacts__element_info"
+            rel="noreferrer"
+            target="_blank"
+            >vk.com/tppd67421</a
+          >
         </div>
       </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <p class="footer__copyright">
-      &copy; Aleksei Petrakov, 2021
-    </p>
-    <div class="footer__up">
-      <a class="footer__up_link" href="#up">
-        <img class="footer__up_icon" src="img/up.svg" alt="Up icon">
-      </a>
-    </div>
-    <div class="footer__social">
-      <a class="footer__social_link" href="https://github.com/tppd67421" rel="noreferrer" target="_blank">
-        <img class="footer__social_gh" src="img/gh.svg" alt="Github icon">
-      </a>
-      <a class="footer__social_link" href="https://t.me/tppd67421" rel="noreferrer" target="_blank">
-        <img class="footer__social_tg" src="img/tg.svg" alt="Telegram icon">
-      </a>
-      <a class="footer__social_link" href="https://vk.com/tppd67421" rel="noreferrer" target="_blank">
-        <img class="footer__social_vk" src="img/vk.svg" alt="Vk icon">
-      </a>
-    </div>
-  </footer>
-
-</body>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; Aleksei Petrakov, 2021</p>
+      <div class="footer__up">
+        <a class="footer__up_link" href="#up">
+          <img class="footer__up_icon" src="img/up.svg" alt="Up icon" />
+        </a>
+      </div>
+      <div class="footer__social">
+        <a
+          class="footer__social_link"
+          href="https://github.com/tppd67421"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img class="footer__social_gh" src="img/gh.svg" alt="Github icon" />
+        </a>
+        <a
+          class="footer__social_link"
+          href="https://t.me/tppd67421"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img class="footer__social_tg" src="img/tg.svg" alt="Telegram icon" />
+        </a>
+        <a
+          class="footer__social_link"
+          href="https://vk.com/tppd67421"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img class="footer__social_vk" src="img/vk.svg" alt="Vk icon" />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

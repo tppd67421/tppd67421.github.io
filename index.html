@@ -1,147 +1,248 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Aleksei Petrakov</title>
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Aleksei Petrakov: front-end developer">
-  <link rel="icon" type="image/png" href="img/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-favicon.png" />
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aleksei Petrakov</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Aleksei Petrakov: front-end developer" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/smoothscrollPolyfill.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
 
-<body>
-  <div id="up"></div>
+  <body>
+    <div id="up"></div>
 
-  <header class="menu">
-    <div class="menu__wrap">
-      <div class="menu__logo">
-        <a href="/">Petrakov</a>
+    <header class="menu">
+      <div class="menu__wrap">
+        <div class="menu__logo">
+          <a href="/">Petrakov</a>
+        </div>
+        <ul class="menu__right">
+          <li>
+            <a class="menu__right_link" href="about">Обо мне</a>
+          </li>
+          <li>
+            <a class="menu__right_link" href="contacts">Контакты</a>
+          </li>
+        </ul>
       </div>
-      <ul class="menu__right">
+    </header>
+
+    <section class="container">
+      <div class="header">
+        <div class="header__title">
+          <h1>Aleksei Petrakov</h1>
+          <h2>Front-end developer</h2>
+        </div>
+      </div>
+
+      <ol class="type">
         <li>
-          <a class="menu__right_link" href="about">Обо мне</a>
+          <button class="type__button active" data-filter="all">All</button>
         </li>
         <li>
-          <a class="menu__right_link" href="contacts">Контакты</a>
+          <button class="type__button" data-filter="application">Applications</button>
         </li>
-      </ul>
-    </div>
-  </header>
+        <li>
+          <button class="type__button" data-filter="markup">Markup</button>
+        </li>
+      </ol>
 
-  <section class="container">
-    <div class="header">
-      <div class="header__title">
-        <h1>Aleksei Petrakov</h1>
-        <h2>Front-end developer</h2>
+      <ol class="portfolio">
+        <!-- GTN 750Xi -->
+        <li class="portfolio__item" data-filter="application">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/tppd67421/GTN-750Xi"
+          >
+            <img
+              class="portfolio__item_image"
+              src="img/portfolio-preview/gtn-750xi.jpg"
+              alt="GTN 750Xi"
+            />
+          </a>
+        </li>
+
+        <!-- G1000 menu -->
+        <li class="portfolio__item" data-filter="application">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/tppd67421/G1000-menu"
+          >
+            <img
+              class="portfolio__item_image"
+              src="img/portfolio-preview/g1000-menu.jpg"
+              alt="G1000 menu"
+            />
+          </a>
+        </li>
+
+        <!-- G1000 PFD -->
+        <li class="portfolio__item" data-filter="application">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/tppd67421/G1000-PFD"
+          >
+            <img
+              class="portfolio__item_image"
+              src="img/portfolio-preview/g1000-pfd.jpg"
+              alt="G1000 PFD"
+            />
+          </a>
+        </li>
+
+        <!-- Shopno -->
+        <li class="portfolio__item" data-filter="markup">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/tppd67421/shopno"
+          >
+            <img
+              class="portfolio__item_image"
+              src="img/portfolio-preview/shopno.jpg"
+              alt="Shopno"
+            />
+          </a>
+        </li>
+
+        <!-- NASA APOD -->
+        <li class="portfolio__item" data-filter="application">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/tppd67421/nasa-apod"
+          >
+            <img
+              class="portfolio__item_image"
+              src="img/portfolio-preview/nasa-apod.jpg"
+              alt="NASA APOD"
+            />
+          </a>
+        </li>
+
+        <!-- Neutron Mail -->
+        <li class="portfolio__item" data-filter="markup">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/tppd67421/neutron-mail"
+          >
+            <img
+              class="portfolio__item_image"
+              src="img/portfolio-preview/neutronmail.jpg"
+              alt="neutronMail"
+            />
+          </a>
+        </li>
+
+        <!-- Hexal -->
+        <li class="portfolio__item" data-filter="markup">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/tppd67421/hexal"
+          >
+            <img class="portfolio__item_image" src="img/portfolio-preview/hexal.jpg" alt="Hexal" />
+          </a>
+        </li>
+
+        <!-- Millisa: beauty studio -->
+        <li class="portfolio__item" data-filter="markup">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/tppd67421/millisa"
+          >
+            <img
+              class="portfolio__item_image"
+              src="img/portfolio-preview/millisa.jpg"
+              alt="Millisa: beauty studio"
+            />
+          </a>
+        </li>
+
+        <!-- Unnamed site -->
+        <li class="portfolio__item" data-filter="markup">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/tppd67421/unnamed"
+          >
+            <img
+              class="portfolio__item_image"
+              src="img/portfolio-preview/unnamed.jpg"
+              alt="Unnamed site"
+            />
+          </a>
+        </li>
+
+        <!-- Dappy: cryptocurrency wallet -->
+        <li class="portfolio__item" data-filter="markup">
+          <a
+            class="portfolio__item_link"
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/tppd67421/dappy"
+          >
+            <img
+              class="portfolio__item_image"
+              src="img/portfolio-preview/dappy.jpg"
+              alt="Dappy: cryptocurrency wallet"
+            />
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; Aleksei Petrakov, 2021</p>
+      <div class="footer__up">
+        <a class="footer__up_link" href="#up">
+          <img class="footer__up_icon" src="img/up.svg" alt="Up icon" />
+        </a>
       </div>
-    </div>
-
-    <ol class="type">
-      <li><button class="type__button active" data-filter="all">All</button></li>
-      <li><button class="type__button" data-filter="application">Applications</button></li>
-      <li><button class="type__button" data-filter="markup">Markup</button></li>
-    </ol>
-
-    <ol class="portfolio">
-
-      <!-- GTN 750Xi -->
-      <li class="portfolio__item" data-filter="application">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="https://github.com/tppd67421/GTN-750Xi">
-          <img class="portfolio__item_image" src="img/portfolio-preview/gtn-750xi.jpg" alt="GTN 750Xi">
+      <div class="footer__social">
+        <a
+          class="footer__social_link"
+          href="https://github.com/tppd67421"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img class="footer__social_gh" src="img/gh.svg" alt="Github icon" />
         </a>
-      </li>
-
-      <!-- G1000 menu -->
-      <li class="portfolio__item" data-filter="application">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="https://github.com/tppd67421/G1000-menu">
-          <img class="portfolio__item_image" src="img/portfolio-preview/g1000-menu.jpg" alt="G1000 menu">
+        <a
+          class="footer__social_link"
+          href="https://t.me/tppd67421"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img class="footer__social_tg" src="img/tg.svg" alt="Telegram icon" />
         </a>
-      </li>
-
-      <!-- G1000 PFD -->
-      <li class="portfolio__item" data-filter="application">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="https://github.com/tppd67421/G1000-PFD">
-          <img class="portfolio__item_image" src="img/portfolio-preview/g1000-pfd.jpg" alt="G1000 PFD">
+        <a
+          class="footer__social_link"
+          href="https://vk.com/tppd67421"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img class="footer__social_vk" src="img/vk.svg" alt="Vk icon" />
         </a>
-      </li>
-
-      <!-- Shopno -->
-      <li class="portfolio__item" data-filter="markup">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="https://github.com/tppd67421/shopno">
-          <img class="portfolio__item_image" src="img/portfolio-preview/shopno.jpg" alt="Shopno">
-        </a>
-      </li>
-
-      <!-- NASA APOD -->
-      <li class="portfolio__item" data-filter="application">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="https://github.com/tppd67421/nasa-apod">
-          <img class="portfolio__item_image" src="img/portfolio-preview/nasa-apod.jpg" alt="NASA APOD">
-        </a>
-      </li>
-
-      <!-- Neutron Mail -->
-      <li class="portfolio__item" data-filter="markup">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="https://github.com/tppd67421/neutron-mail">
-          <img class="portfolio__item_image" src="img/portfolio-preview/neutronmail.jpg" alt="neutronMail">
-        </a>
-      </li>
-
-      <!-- Hexal -->
-      <li class="portfolio__item" data-filter="markup">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="https://github.com/tppd67421/hexal">
-          <img class="portfolio__item_image" src="img/portfolio-preview/hexal.jpg" alt="Hexal">
-        </a>
-      </li>
-
-      <!-- Millisa: beauty studio -->
-      <li class="portfolio__item" data-filter="markup">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="https://github.com/tppd67421/millisa">
-          <img class="portfolio__item_image" src="img/portfolio-preview/millisa.jpg" alt="Millisa: beauty studio">
-        </a>
-      </li>
-
-      <!-- Unnamed site -->
-      <li class="portfolio__item" data-filter="markup">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="https://github.com/tppd67421/unnamed">
-          <img class="portfolio__item_image" src="img/portfolio-preview/unnamed.jpg" alt="Unnamed site">
-        </a>
-      </li>
-
-      <!-- Dappy: cryptocurrency wallet -->
-      <li class="portfolio__item" data-filter="markup">
-        <a class="portfolio__item_link" rel="noreferrer" target="_blank" href="https://github.com/tppd67421/dappy">
-          <img class="portfolio__item_image" src="img/portfolio-preview/dappy.jpg" alt="Dappy: cryptocurrency wallet">
-        </a>
-      </li>
-
-    </ol>
-  </section>
-
-
-
-  <footer class="footer">
-    <p class="footer__copyright">
-      &copy; Aleksei Petrakov, 2021
-    </p>
-    <div class="footer__up">
-      <a class="footer__up_link" href="#up">
-        <img class="footer__up_icon" src="img/up.svg" alt="Up icon">
-      </a>
-    </div>
-    <div class="footer__social">
-      <a class="footer__social_link" href="https://github.com/tppd67421" rel="noreferrer" target="_blank">
-        <img class="footer__social_gh" src="img/gh.svg" alt="Github icon">
-      </a>
-      <a class="footer__social_link" href="https://t.me/tppd67421" rel="noreferrer" target="_blank">
-        <img class="footer__social_tg" src="img/tg.svg" alt="Telegram icon">
-      </a>
-      <a class="footer__social_link" href="https://vk.com/tppd67421" rel="noreferrer" target="_blank">
-        <img class="footer__social_vk" src="img/vk.svg" alt="Vk icon">
-      </a>
-    </div>
-  </footer>
-
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
